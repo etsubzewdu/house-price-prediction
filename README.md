@@ -26,7 +26,7 @@ The dataset includes the following features:
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/username/house-price-prediction.git
+   git clone https://github.com/etsubzewdu/house-price-prediction.git
    cd house-price-prediction
    ```
 
@@ -37,12 +37,12 @@ The dataset includes the following features:
 
 3. Train the model:  
    ```bash
-   python train.py
+   python app.py
    ```
 
 4. Start the API:  
-   ```bash
-   uvicorn app:app --reload
+   python3 -m uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+
    ```
 
 5. Use the API for predictions https://house-price-prediction-15.onrender.com for interactive documentation).  
@@ -77,14 +77,7 @@ Input:
 }
 ```
 
-Output:  
-```json
-{
-  "predicted_price": 480000.0
-}
-```
 
----
 
 ## Results
 
@@ -105,6 +98,6 @@ The model captures trends but could be enhanced with advanced regression models 
 
 ## License
 
-Licensed under the MIT License. Modify and use as needed.
+Licensed under the MIT License.
 ``` 
 
