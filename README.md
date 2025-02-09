@@ -3,14 +3,16 @@
 ```markdow
 # Predicting House Prices Using Machine Learning
 
-This project predicts house prices based on property features using a regression model. It includes data preprocessing, exploratory data analysis (EDA), model training, evaluation, and deployment via FastAPI for real-time predictions.
+This project predicts house prices based on property features using a regression model.
+It includes data preprocessing, exploratory data analysis (EDA), model training, evaluation, and deployment via FastAPI for real-time predictions.
 
 ---
 
 ## Features
 
 The dataset includes the following features:  
-- `bedrooms`, `bathrooms`, `sqft_living`, `sqft_lot`, `floors`, `waterfront`, `view`, `condition`, `sqft_above`, `sqft_basement`, `yr_built`, `yr_renovated` (numerical features).  
+- `bedrooms`, `bathrooms`, `sqft_living`, `sqft_lot`, `floors`, `waterfront`, `view`,
+`condition`, `sqft_above`, `sqft_basement`, `yr_built`, `yr_renovated` (numerical features).  
 - `price`: Target variable (house price).  
 
 ---
@@ -31,23 +33,15 @@ The dataset includes the following features:
    ```
 
 2. Install dependencies:  
-   ```bash
    pip install -r requirements.txt
-   ```
 
 3. Train the model:  
-   ```bash
    python app.py
-   ```
 
 4. Start the API:  
    python3 -m uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 
-   ```
-
 5. Use the API for predictions https://house-price-prediction-15.onrender.com for interactive documentation).  
-
----
 
 ## Example API Request
 
@@ -75,7 +69,6 @@ Input:
   "statezip": "WA 98101",
   "country": "USA"
 }
-```
 
 
 
@@ -86,7 +79,6 @@ Input:
 
 The model captures trends but could be enhanced with advanced regression models and larger datasets.
 
----
 
 ## Future Improvements
 
@@ -94,10 +86,8 @@ The model captures trends but could be enhanced with advanced regression models 
 - Use advanced models like Random Forest or Gradient Boosting.  
 - Train on real-world datasets for better generalization.  
 
----
 
 ## License
 
 Licensed under the MIT License.
-``` 
 
